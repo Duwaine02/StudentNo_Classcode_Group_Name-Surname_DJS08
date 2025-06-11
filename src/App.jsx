@@ -2,6 +2,7 @@
  * Challenge:
  * Bootstrap the VanLife project by creating the first 2 routes:
  * Home and About.
+ *
  * 
  * Also include the navbar that can link between the two routes.
  * For now, you'll either need to copy/paste the navbar code
@@ -13,11 +14,27 @@
  * Review challenge: do all the CSS yourself based on the design
  * linked in the slides.
  */
+import {Routes,Route} from 'react-router-dom'
+import Home from './Home'
+import About from './About'
+
+
 
 function App() {
+   return (
 
-  return (
-    <h1>Start here</h1>
+  <div>
+    <nav>
+      <a href="/">Home</a> | <a href="/About">About</a>
+    </nav>
+
+    <Routes>
+      <Route path="/" element={<Home/>} />
+      
+    </Routes>
+
+
+  </div>
   )
 }
 
