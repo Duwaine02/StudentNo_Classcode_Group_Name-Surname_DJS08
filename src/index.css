@@ -35,7 +35,7 @@ nav a:first-child {
 }
 
 .home-container {
-  background-image: url('https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.autoevolution.com%2Fnews%2Fapocalypse-ready-sprinter-van-conversion-blends-striking-aesthetics-with-deluxe-features-212837.html&psig=AOvVaw3d5EezOcJFzNQ_bsH92iYf&ust=1749802836237000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCODO2MTJ8I0DFQAAAAAdAAAAABAR');
+  background-image: url('./assets/images/VanLife.png');
   background-size: cover;
   background-position: center;
   height: 500px;
