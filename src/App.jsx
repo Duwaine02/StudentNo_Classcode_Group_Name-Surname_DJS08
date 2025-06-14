@@ -14,27 +14,29 @@
  * Review challenge: do all the CSS yourself based on the design
  * linked in the slides.
  */
-import {Routes,Route} from 'react-router-dom'
+import { Routes, Route, Link } from 'react-router-dom'
 import Home from './Home'
 import About from './About'
 
 
-
 function App() {
-   return (
+  return (
+    <>
+      <header>
+        <nav>
+          <Link to="/">#VanLife</Link>
+          <Link to="/">Home</Link>
+          <Link to="/about">About</Link>
+        </nav>
+      </header>
 
-  <div>
-    <nav>
-      <a href="/">Home</a> | <a href="/About">About</a>
-    </nav>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+      </Routes>
 
-    <Routes>
-      <Route path="/" element={<Home/>} />
-      <Route path="/About" element={<About/>}/>
-    </Routes>
-
-
-  </div>
+      <footer>© 2022 #VANLIFE</footer>
+    </>
   )
 }
 
